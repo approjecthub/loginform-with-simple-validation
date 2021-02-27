@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="#">
+        <h2>Register with us</h2>
+
+        <p>
+            <label for="username">
+                username
+            </label><br>
+            <input type="text" placeholder="Enter your name" onkeyup="validateUname()" id="Uname" autocomplete="off">
+            <label for="uname" id="uname_error" class='error'>username must contain 4 characters</label>
+        </p>
+        <p>
+            <label for="useremail">
+                email
+            </label><br>
+            <input type="email" placeholder="Enter your email" id="usermail" onkeyup="validateEmail()"  autocomplete="offf" >
+            <label for="uname" id="email_error" class='error'>please provide an correct mail</label>
+        </p>
+        <p>
+            <label for="userpassword">
+                password
+            </label><br>
+            <input type="password" placeholder="password" autocomplete="off">
+            
+        </p>
+        <p>
+            <label for="userpassword">
+                confirm password
+            </label><br>
+            <input type="password" placeholder="confirm password" autocomplete="off">
+            
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+        </p>
+    </form>
+    <script>
+        document.getElementById("uname_error").style.display='none'
+        document.getElementById("email_error").style.display='none'
+    </script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
