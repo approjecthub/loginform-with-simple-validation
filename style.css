@@ -45,6 +45,12 @@ input{
     font-size: 18px;
     
 }
+
+::placeholder {
+    opacity: 0.8;
+    font-size: medium;
+  }
+
 input[type=submit]{
     background-color: rgb(43, 143, 189);
     font-size: 18px;
