@@ -45,6 +45,11 @@ input{
     font-size: 18px;
     
 }
+input:focus{
+    outline: none;
+    border-width: 5px;
+    border-color: rgb(147, 207, 192);
+}
 
 ::placeholder {
     opacity: 0.8;
